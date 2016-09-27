@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangxin.buildingindustryproject_rm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.android.libcore_ui.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Activity_translucent_navigation_bar">
+
+        <!-- AppTheme 系统默认主题 -->
+        <!-- Theme.AppCompat.Light.NoActionBar 最原始主题 -->
+        <!-- Activity_translucent_status_bar 状态栏透明风格 -->
+        <!-- Activity_translucent_navigation_bar 状态栏和导航栏透明风格 -->
+
+
+        <!--
+        The Application and the first Activity share the same name
+        specified in the android:label field of the <activity> item
+        -->
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.HomeTestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--
+                以下两个category用来标识在应用崩溃之后应该启动的activity，记住一定要加上
+                android.intent.category.DEFAULT，因为默认带该category，要不然无法响应
+                -->
+                <category android:name="com.android.framework.MAINPAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.ActivityTestHomePage"
+            android:label="@string/activity_test_activity_homepage"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.ActivityA"
+            android:label="@string/activity_test_activity_A"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+
+            <!--
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW"/>
+                   <category android:name="android.intent.category.DEFAULT"/>
+                   <category android:name="android.intent.category.BROWSABLE"/>
+                   <data android:scheme="http"/>
+               </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.ActivityB"
+            android:label="@string/activity_test_activity_B"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.GuideActivity"
+            android:label="@string/activity_test_guide"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.DialogActivity"
+            android:label="@string/activity_test_dialog"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.DBActivity"
+            android:label="@string/activity_test_db"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.CacheActivity"
+            android:label="@string/activity_test_cache"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.WebViewActivity"
+            android:label="@string/activity_test_webview"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.DownloadActivity"
+            android:label="@string/activity_test_download"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.UtilsActivity"
+            android:label="@string/activity_test_utils"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.FileActivity"
+            android:label="@string/activity_test_file_utils"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.ImageActivity1"
+            android:label="@string/activity_test_image_utils"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.CommonActivity"
+            android:label="@string/activity_test_common_utils"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.NetActivity"
+            android:label="@string/activity_test_net"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.VolleyActivity"
+            android:label="@string/activity_test_volley"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.ImageActivity"
+            android:label="@string/activity_test_imageloader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.GridLayoutActivity"
+            android:label="@string/activity_test_gridLinearLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.FlowLayoutActivity"
+            android:label="@string/activity_test_flow_layout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity_test.WidgetActivity"
+            android:label="@string/activity_test_widget"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangxin.buildingindustryproject_rm.activity.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

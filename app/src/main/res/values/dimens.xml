@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_0.2x">2dp</dimen>
+    <dimen name="margin_0.5x">5dp</dimen>
+    <dimen name="margin_0.7x">7dp</dimen>
+    <dimen name="margin_0.8x">8dp</dimen>
+    <dimen name="margin_1x">10dp</dimen>
+    <dimen name="margin_1.2x">12dp</dimen>
+    <dimen name="margin_1.5x">15dp</dimen>
+    <dimen name="margin_1.6x">16dp</dimen>
+    <dimen name="margin_2x">20dp</dimen>
+    <dimen name="margin_2.5x">25dp</dimen>
+    <dimen name="margin_3x">30dp</dimen>
+    <dimen name="margin_4x">40dp</dimen>
+    <dimen name="margin_5x">50dp</dimen>
+    <!-- padding -->
+    <dimen name="padding_0.5x">5dp</dimen>
+    <dimen name="padding_0.2x">2dp</dimen>
+    <dimen name="padding_0.3x">3dp</dimen>
+    <dimen name="padding_0.4x">4dp</dimen>
+    <dimen name="padding_1x">10dp</dimen>
+    <dimen name="padding_1.5x">15dp</dimen>
+    <dimen name="padding_1.4x">14dp</dimen>
+    <dimen name="padding_2x">20dp</dimen>
+    <dimen name="padding_3x">30dp</dimen>
+    <dimen name="padding_4x">40dp</dimen>
+    <dimen name="padding_5x">50dp</dimen>
+    <dimen name="padding_6x">60dp</dimen>
+    <dimen name="padding_7x">70dp</dimen>
+    <dimen name="padding_10x">100dp</dimen>
+    <dimen name="padding_15x">150dp</dimen>
+    <dimen name="padding_18x">180dp</dimen>
+    <!-- word size：一共分为4种：最大（用于title）、大字体（normal，文本正文内容）、小字体（文本正文的辅助性问题，一般为灰色字体）、最小号（用于更小的辅助性文字，一般为黑色或者白色） -->
+    <dimen name="text_size_super_big">30sp</dimen>
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+</resources>
